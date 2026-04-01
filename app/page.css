@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Die Checkbox selbst verstecken */
+.picker-item input[type="checkbox"] {
+    display: none;
+}
+
+/* Das Styling für das Quadrat (Label) */
+.picker-card {
+    @apply bg-white/4 border border-white/10;
+    @apply flex flex-col items-center gap-1;
+
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.picker-card:hover {
+    @apply bg-white/10 border-white/20;
+}
+
+/* Styling wenn ausgewählt */
+.picker-item input:checked + .picker-card {
+    @apply border-[#624eac] bg-[#624eac];
+    transform: scale(1.02) translateY(-1px);
+    box-shadow: 0 0 8px rgba(98, 78, 172, 0.3);
+}
+
+/* Bild Styling */
+.picker-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.picker-card h3 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.picker-card p {
+    font-size: 0.85rem;
+    @apply text-white/60;
+    margin: 0;
+}
