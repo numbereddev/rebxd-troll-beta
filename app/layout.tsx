@@ -13,19 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://beta.rebxd.com/"),
-    title: {
-        default: "Rebxd Beta Waitlist",
-        template: "%s · Rebxd Beta Waitlist",
-    },
+    title: "Rebxd Beta Waitlist",
     description: "Rebxd is here. Claim your waitlist seat, now.",
-    category: "technology",
     openGraph: {
-        type: "website",
-        locale: "en_US",
         url: "https://beta.rebxd.com",
         title: "Rebxd Beta Waitlist",
         description: "Rebxd is here. Claim your waitlist seat, now.",
+
+        type: "website",
+        locale: "en_US",
     },
     twitter: {
         title: "Rebxd Beta Waitlist",
